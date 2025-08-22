@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a3d62; 
+    color: white;
+    min-height: 100vh;
+}
+
+.bird {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.bird_image img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.bird_details {
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.bird_details h1 {
+    color: #f1c40f; 
+    margin-bottom: 10px;
+}
+
+.bird_details p {
+    line-height: 1.6;
+}
+.bird_video video {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.bird_audio audio {
+    width: 300px;
+    margin-top: 10px;
+}
