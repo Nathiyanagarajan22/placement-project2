@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.heading h2 {
+    margin-bottom: 20px;
+}
+
+.robot {
+    padding: 20px;
+    background: #fdebd0;
+    border-radius: 10px;
+}
+
+/* Head */
+.head {
+    width: 100px;
+    height: 100px;
+    background: black;
+    border-radius: 15px;
+    margin: 0 auto;
+    animation: head-dance 1.5s infinite alternate ease-in-out;
+}
+
+.eyes {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.eyes div {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Middle */
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.middle_body {
+    width: 80px;
+    height: 100px;
+    background: black;
+    border-radius: 10px;
+}
+
+.left_hand, .right_hand {
+    width: 20px;
+    height: 80px;
+    background: purple;
+    border-radius: 10px;
+}
+
+/* Hands animation */
+.left_hand {
+    margin-right: 10px;
+    transform-origin: top center;
+    animation: left-hand-dance 1s infinite alternate ease-in-out;
+}
+.right_hand {
+    margin-left: 10px;
+    transform-origin: top center;
+    animation: right-hand-dance 1s infinite alternate ease-in-out;
+}
+
+/* Lower body */
+.lower {
+    display: flex;
+    justify-content: center;
+}
+
+.left_leg, .right_leg {
+    width: 20px;
+    height: 80px;
+    background: purple;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+/* Legs animation */
+.left_leg {
+    transform-origin: top center;
+    animation: left-leg-dance 1s infinite alternate ease-in-out;
+}
+.right_leg {
+    transform-origin: top center;
+    animation: right-leg-dance 1s infinite alternate ease-in-out;
+}
+
+/* Animations */
+@keyframes head-dance {
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(-10deg) translateY(-5px); }
+    100% { transform: rotate(10deg) translateY(5px); }
+}
+
+@keyframes left-hand-dance {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-40deg); }
+}
+@keyframes right-hand-dance {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(40deg); }
+}
+
+@keyframes left-leg-dance {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-20deg) translateY(10px); }
+}
+@keyframes right-leg-dance {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(20deg) translateY(10px); }
+}
